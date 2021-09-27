@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.camerakit.CameraKitView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:camera_aspectRatio="1"
+        app:camera_imageJpegQuality="60"
+        app:camera_imageMegaPixels="1.9"
+        app:camera_facing="back"
+        app:camera_flash="auto"
+        app:camera_zoomFactor="1.5"
+        app:camera_focus="continuous"
+        app:camera_permissions="camera|storage" />
+    <Button
+        android:id="@+id/btn_capture"
+        android:text="Capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
