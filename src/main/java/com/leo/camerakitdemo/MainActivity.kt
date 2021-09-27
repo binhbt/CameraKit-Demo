@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         try {
             val savedPhoto =
-                File(Environment.getExternalStorageDirectory(), "hand.jpg")
+                File(Environment.getExternalStorageDirectory(), "square.jpg")
             FileOutputStream(savedPhoto.getPath()).use({ out ->
                 resizedImage.compress(Bitmap.CompressFormat.JPEG, 60, out) // bmp is your Bitmap instance
             })
